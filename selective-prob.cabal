@@ -27,7 +27,8 @@ common common-options
                        , async
                        , containers
                        , deepseq
-  
+                       , template-haskell
+
   ghc-options:         -Wall
                        -Wcompat
                        -Widentities
@@ -50,6 +51,7 @@ library
   hs-source-dirs:      src
   exposed-modules:     SelectiveProb
                        ConcurrentProb
+                       Test
 
 test-suite selective-prob-test
   import:              common-options
